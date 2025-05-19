@@ -12,7 +12,7 @@ from typing import Any, Dict, List, Optional, Set, Tuple
 import boto3
 from boto3.dynamodb.conditions import Attr, Key
 from botocore.exceptions import ClientError
-from reretry import retry
+from retry import retry
 
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger("migration")
